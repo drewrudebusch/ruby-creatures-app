@@ -1,0 +1,13 @@
+<div class="well">
+  <h1> <%= @creature.name %> </h1>
+  <p> <%= @creature.description %></p>
+
+  <% for tag in @tags %>
+    <p> <%= link_to tag.name, tag_path(tag) %> </p>
+  <% end %>
+
+  <%= button_to "Delete Creature", { action: "destroy", id: @creature.id }, method: :delete, class: "btn btn-danger" %> 
+
+  <%= link_to "Edit", edit_creature_path, class: "btn btn-primary" %>  
+</div>
+
