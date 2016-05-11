@@ -31,8 +31,12 @@ Rails.application.routes.draw do
 
   root 'home#index'
 
-  resources :creatures
-  resources :tags
+  get 'creatures' => 'creatures#index'
+
+  delete 'creatures/:id' => 'creatures#destroy'
+
+  # resources :creatures
+  # resources :tags
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,6 +1,7 @@
 class CreaturesController < ApplicationController
   def index
     @creatures = Creature.all
+    render :json => @creatures
   end
 
   def create
@@ -31,8 +32,8 @@ class CreaturesController < ApplicationController
   end
 
   def destroy
-    Creature.find(params[:id]).delete
-    redirect_to creatures_path
+    @creature = Creature.find(params[:id]).delete
+    render :json => @creature
   end
 
   private
