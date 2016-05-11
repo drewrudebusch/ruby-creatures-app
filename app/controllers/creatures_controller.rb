@@ -5,8 +5,8 @@ class CreaturesController < ApplicationController
   end
 
   def create
-    Creature.create creature_params
-    redirect_to creatures_path
+    @creature = Creature.create creature_params
+    render :json => @creature
   end
 
   def new

@@ -1,39 +1,12 @@
 Rails.application.routes.draw do
-  # get 'tags/index'
-
-  # get 'tags/create'
-
-  # get 'tags/new'
-
-  # get 'tags/edit'
-
-  # get 'tags/show'
-
-  # get 'tags/update'
-
-  # get 'tags/destroy'
-
-  # get 'creatures/index'
-
-  # get 'creatures/create'
-
-  # get 'creatures/new'
-
-  # get 'creatures/edit'
-
-  # get 'creatures/show'
-
-  # get 'creatures/update'
-
-  # get 'creatures/destroy'
-
-  # get 'creatures/index'
 
   root 'home#index'
 
   get 'creatures' => 'creatures#index'
 
   delete 'creatures/:id' => 'creatures#destroy'
+
+  post 'creatures' => 'creatures#create'
 
   # resources :creatures
   # resources :tags

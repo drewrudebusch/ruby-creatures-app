@@ -18744,3 +18744,3080 @@ Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:14:39 -0700
 Processing by CreaturesController#index as */*
   [1m[35mCreature Load (0.7ms)[0m  SELECT "creatures".* FROM "creatures"
 Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/creatures/new" for 127.0.0.1 at 2016-05-10 23:19:39 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/creatures/new"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/drewrudebusch/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/drewrudebusch/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/drewrudebusch/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.3ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (12.4ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (48.9ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (48.7ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (71.6ms)
+
+
+Started GET "/creatures/new" for 127.0.0.1 at 2016-05-10 23:19:59 -0700
+
+ArgumentError (Missing :action key on routes definition, please check your routes.):
+  config/routes.rb:9:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.7ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.7ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (35.9ms)
+
+
+Started GET "/creatures/new" for 127.0.0.1 at 2016-05-10 23:20:08 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 456ms (Views: 432.7ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:20:08 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-10 23:20:08 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:20:08 -0700
+
+
+Started GET "/assets/creatures.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:20:08 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-10 23:20:08 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-10 23:20:08 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-10 23:20:08 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-10 23:20:08 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:20:08 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:20:08 -0700
+
+
+Started GET "/assets/home.self-e777fdd6b04cfa4194e41656c88258098694e7dc65f03f98538b5085b531635f.js?body=1" for 127.0.0.1 at 2016-05-10 23:20:08 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:20:08 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-10 23:20:08 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-10 23:21:19 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 33ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:21:20 -0700
+Processing by CreaturesController#index as */*
+  [1m[35mCreature Load (0.9ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 29ms (Views: 14.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-10 23:28:41 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 99ms (Views: 98.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/creatures.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:28:41 -0700
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:28:41 -0700
+
+
+Started GET "/assets/home.self-f4375bb9f6837649c8ca55804109ba2a4d621597b00bb313dba97e25ed6c8582.js?body=1" for 127.0.0.1 at 2016-05-10 23:28:41 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:28:41 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-10 23:28:41 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-10 23:28:41 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-10 23:28:41 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-10 23:28:41 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-10 23:28:41 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:28:41 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:28:41 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:28:41 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-10 23:28:41 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-10 23:28:41 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:28:43 -0700
+Processing by CreaturesController#index as HTML
+  [1m[36mCreature Load (0.9ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 27ms (Views: 11.4ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:28:43 -0700
+Processing by CreaturesController#index as HTML
+  [1m[35mCreature Load (0.5ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/creatures/new" for 127.0.0.1 at 2016-05-10 23:28:49 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 38ms (Views: 37.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/creatures/new" for 127.0.0.1 at 2016-05-10 23:28:49 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 30ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:31:54 -0700
+Processing by CreaturesController#index as HTML
+  [1m[36mCreature Load (1.0ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:31:54 -0700
+Processing by CreaturesController#index as HTML
+  [1m[35mCreature Load (0.5ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:32:08 -0700
+Processing by CreaturesController#index as HTML
+  [1m[36mCreature Load (0.7ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 18ms (Views: 7.6ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:32:08 -0700
+Processing by CreaturesController#index as HTML
+  [1m[35mCreature Load (0.4ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:32:11 -0700
+Processing by CreaturesController#index as HTML
+  [1m[36mCreature Load (0.4ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-10 23:32:13 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 115ms (Views: 114.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-10 23:32:13 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 27ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-be3e83e5ae8042514ea1bdf601cd655e69e0ab5ca00f332fe0d7e2bfc47d8f02.js?body=1" for 127.0.0.1 at 2016-05-10 23:32:13 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:32:15 -0700
+Processing by CreaturesController#index as */*
+  [1m[35mCreature Load (0.6ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:32:16 -0700
+Processing by CreaturesController#index as */*
+  [1m[36mCreature Load (0.7ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/creatures/7" for 127.0.0.1 at 2016-05-10 23:32:18 -0700
+
+ActionController::RoutingError (No route matches [GET] "/creatures/7"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/drewrudebusch/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/drewrudebusch/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/drewrudebusch/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (38.1ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (23.0ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (46.0ms)
+
+
+Started GET "/creatures/7" for 127.0.0.1 at 2016-05-10 23:32:18 -0700
+
+ActionController::RoutingError (No route matches [GET] "/creatures/7"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/drewrudebusch/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/drewrudebusch/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/drewrudebusch/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.3ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.0ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (37.3ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:32:21 -0700
+Processing by CreaturesController#index as */*
+  [1m[35mCreature Load (0.6ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-10 23:33:28 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 92ms (Views: 91.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/creatures.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:33:28 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:33:28 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-10 23:33:28 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-10 23:33:29 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-10 23:33:29 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-10 23:33:29 -0700
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:33:29 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:33:29 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-10 23:33:29 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:33:29 -0700
+
+
+Started GET "/assets/home.self-831c3c730939213ceb271855e93034edf4a58167cae2cc7ac82ddc5d39914bd2.js?body=1" for 127.0.0.1 at 2016-05-10 23:33:29 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:33:29 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-10 23:33:29 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-10 23:33:29 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-10 23:33:29 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:33:30 -0700
+Processing by CreaturesController#index as HTML
+  [1m[36mCreature Load (0.5ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:33:30 -0700
+Processing by CreaturesController#index as HTML
+  [1m[35mCreature Load (0.4ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:33:34 -0700
+Processing by CreaturesController#index as HTML
+  [1m[36mCreature Load (0.5ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:33:34 -0700
+Processing by CreaturesController#index as HTML
+  [1m[35mCreature Load (0.8ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-10 23:33:53 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 93ms (Views: 92.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-eb3864ae3d774fbe94dc5c2cf20a9cb83b3b90fc66014634b50e560f1cd2469e.js?body=1" for 127.0.0.1 at 2016-05-10 23:33:53 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-10 23:33:53 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:33:53 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-10 23:33:53 -0700
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:33:53 -0700
+
+
+Started GET "/assets/creatures.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:33:53 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-10 23:33:53 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-10 23:33:53 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-10 23:33:53 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:33:53 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:33:53 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:33:53 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-10 23:33:53 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-10 23:33:53 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:33:53 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-10 23:33:53 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:33:54 -0700
+Processing by CreaturesController#index as */*
+  [1m[36mCreature Load (0.4ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-10 23:35:23 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 121ms (Views: 119.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/creatures.self-e4947fd26be8bc529e714166a4a3f11289ad703867d32a1c4ece475d52d10c82.css?body=1" for 127.0.0.1 at 2016-05-10 23:35:24 -0700
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:35:24 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-10 23:35:24 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-10 23:35:24 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-10 23:35:24 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-10 23:35:24 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:35:24 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-10 23:35:24 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:35:24 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:35:24 -0700
+
+
+Started GET "/assets/home.self-03b5df85de08b6f4905c9ca0866e6a6db54ddc1f85f462425b13de901e2b4883.js?body=1" for 127.0.0.1 at 2016-05-10 23:35:24 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:35:24 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-10 23:35:24 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-10 23:35:24 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-10 23:35:24 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:35:25 -0700
+Processing by CreaturesController#index as */*
+  [1m[35mCreature Load (0.5ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:35:39 -0700
+Processing by CreaturesController#index as */*
+  [1m[36mCreature Load (0.6ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-10 23:35:50 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 67ms (Views: 66.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d253d223cf77e801280587a0e2d9a4ba8de8c3a93a92fd0f09ccfb0eaf23848d.css?body=1" for 127.0.0.1 at 2016-05-10 23:35:50 -0700
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:35:50 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-10 23:35:50 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-10 23:35:50 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:35:50 -0700
+
+
+Started GET "/assets/creatures.self-162eb9bf054dafdb4950b4124cccef52ddd953fe84624b3d2eeca46ae078cf8f.css?body=1" for 127.0.0.1 at 2016-05-10 23:35:50 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-10 23:35:50 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-10 23:35:50 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:35:50 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:35:50 -0700
+
+
+Started GET "/assets/home.self-03b5df85de08b6f4905c9ca0866e6a6db54ddc1f85f462425b13de901e2b4883.js?body=1" for 127.0.0.1 at 2016-05-10 23:35:50 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:35:50 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-10 23:35:50 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-10 23:35:50 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-10 23:35:50 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:35:51 -0700
+Processing by CreaturesController#index as */*
+  [1m[35mCreature Load (0.3ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-10 23:36:53 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 99ms (Views: 98.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/creatures.self-0590585786853d97152b17302c6dc234bbb3a71a715119e18e5e069b72c1c0dd.css?body=1" for 127.0.0.1 at 2016-05-10 23:36:53 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2016-05-10 23:36:53 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-10 23:36:53 -0700
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:36:53 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-10 23:36:53 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:36:53 -0700
+
+
+Started GET "/assets/home.self-55ad2a717d50246f4ff272008ab332eb89dc8c6cfb90e66ee6b71dfe3ef17296.js?body=1" for 127.0.0.1 at 2016-05-10 23:36:53 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-10 23:36:53 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:36:53 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-10 23:36:53 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:36:53 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:36:53 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-10 23:36:53 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-10 23:36:53 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-10 23:36:53 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:36:55 -0700
+Processing by CreaturesController#index as */*
+  [1m[36mCreature Load (1.0ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:37:02 -0700
+Processing by CreaturesController#index as */*
+  [1m[35mCreature Load (0.8ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:37:11 -0700
+Processing by CreaturesController#index as */*
+  [1m[36mCreature Load (0.6ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-10 23:37:15 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 68ms (Views: 67.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:37:16 -0700
+
+
+Started GET "/assets/creatures.self-3306492a280fb4b39049fd22b053c6b859c8b8a0270e08402167e3add14e610d.css?body=1" for 127.0.0.1 at 2016-05-10 23:37:16 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-10 23:37:16 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2016-05-10 23:37:16 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:37:16 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-10 23:37:16 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-10 23:37:16 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-10 23:37:16 -0700
+
+
+Started GET "/assets/home.self-55ad2a717d50246f4ff272008ab332eb89dc8c6cfb90e66ee6b71dfe3ef17296.js?body=1" for 127.0.0.1 at 2016-05-10 23:37:16 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:37:16 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:37:16 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:37:16 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-10 23:37:16 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-10 23:37:16 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:37:17 -0700
+Processing by CreaturesController#index as */*
+  [1m[35mCreature Load (0.5ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-10 23:37:24 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 58ms (Views: 56.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/creatures.self-c738fec82ddf91437862b58de6121d6b9d485377ce11ba158a41fb4a6508bd71.css?body=1" for 127.0.0.1 at 2016-05-10 23:37:24 -0700
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:37:24 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:37:24 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-10 23:37:24 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2016-05-10 23:37:24 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-10 23:37:24 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-10 23:37:24 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-10 23:37:24 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:37:24 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:37:24 -0700
+
+
+Started GET "/assets/home.self-55ad2a717d50246f4ff272008ab332eb89dc8c6cfb90e66ee6b71dfe3ef17296.js?body=1" for 127.0.0.1 at 2016-05-10 23:37:24 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:37:24 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-10 23:37:24 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-10 23:37:24 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:37:25 -0700
+Processing by CreaturesController#index as */*
+  [1m[36mCreature Load (0.6ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-10 23:37:49 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 58ms (Views: 56.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:37:49 -0700
+
+
+Started GET "/assets/creatures.self-b30e651037b32a6a016f175bdc61216a267633975ad2a17289032e65291ceeae.css?body=1" for 127.0.0.1 at 2016-05-10 23:37:49 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-10 23:37:49 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:37:49 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-10 23:37:49 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2016-05-10 23:37:49 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-10 23:37:49 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-10 23:37:49 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:37:49 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:37:49 -0700
+
+
+Started GET "/assets/home.self-55ad2a717d50246f4ff272008ab332eb89dc8c6cfb90e66ee6b71dfe3ef17296.js?body=1" for 127.0.0.1 at 2016-05-10 23:37:49 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:37:49 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-10 23:37:49 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-10 23:37:49 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:37:51 -0700
+Processing by CreaturesController#index as */*
+  [1m[35mCreature Load (0.5ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-10 23:38:12 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 50ms (Views: 48.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/creatures.self-e79913d5e76d76416d687e798eabb9f495e911bd4c0e6430d7192c4c293b0b7a.css?body=1" for 127.0.0.1 at 2016-05-10 23:38:12 -0700
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:38:12 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-10 23:38:12 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:38:12 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-10 23:38:12 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-10 23:38:12 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2016-05-10 23:38:12 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-10 23:38:12 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:38:12 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:38:12 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-10 23:38:12 -0700
+
+
+Started GET "/assets/home.self-55ad2a717d50246f4ff272008ab332eb89dc8c6cfb90e66ee6b71dfe3ef17296.js?body=1" for 127.0.0.1 at 2016-05-10 23:38:12 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:38:13 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-10 23:38:13 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:38:14 -0700
+Processing by CreaturesController#index as */*
+  [1m[36mCreature Load (0.6ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-10 23:38:21 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 61ms (Views: 59.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/creatures.self-5bfce733ecb9cd878599afc0396bbf298bfac9322a1b3dc5b05d17b334ea8c0d.css?body=1" for 127.0.0.1 at 2016-05-10 23:38:22 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-10 23:38:22 -0700
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:38:22 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-10 23:38:22 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:38:22 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2016-05-10 23:38:22 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-10 23:38:22 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:38:22 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:38:22 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-10 23:38:22 -0700
+
+
+Started GET "/assets/home.self-55ad2a717d50246f4ff272008ab332eb89dc8c6cfb90e66ee6b71dfe3ef17296.js?body=1" for 127.0.0.1 at 2016-05-10 23:38:22 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:38:22 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-10 23:38:22 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-10 23:38:22 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:38:23 -0700
+Processing by CreaturesController#index as */*
+  [1m[35mCreature Load (0.4ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/creatures" for 127.0.0.1 at 2016-05-10 23:44:47 -0700
+Processing by CreaturesController#create as HTML
+Completed 400 Bad Request in 5ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: creature):
+  app/controllers/creatures_controller.rb:42:in `creature_params'
+  app/controllers/creatures_controller.rb:8:in `create'
+
+
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.7ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (20.2ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (41.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-10 23:48:48 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 94ms (Views: 92.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-27ecc162de7d3627c6952684270e3a12e2f5ce3f24fb70b833ba78e221d0e4b2.js?body=1" for 127.0.0.1 at 2016-05-10 23:48:48 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-10 23:48:48 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:48:50 -0700
+Processing by CreaturesController#index as HTML
+  [1m[36mCreature Load (0.4ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 10ms (Views: 6.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:48:50 -0700
+Processing by CreaturesController#index as HTML
+  [1m[35mCreature Load (0.4ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:48:57 -0700
+Processing by CreaturesController#index as HTML
+  [1m[36mCreature Load (2.3ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 5ms (Views: 1.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-10 23:48:59 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 35ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-10 23:49:09 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 101ms (Views: 100.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:49:09 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:49:09 -0700
+
+
+Started GET "/assets/creatures.self-5bfce733ecb9cd878599afc0396bbf298bfac9322a1b3dc5b05d17b334ea8c0d.css?body=1" for 127.0.0.1 at 2016-05-10 23:49:09 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2016-05-10 23:49:09 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-10 23:49:09 -0700
+
+
+Started GET "/assets/home.self-d93e075e90fb794f0e095463cb6c3b05f5505ef18c1167ff7f5e85aed4e4c5db.js?body=1" for 127.0.0.1 at 2016-05-10 23:49:09 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-10 23:49:09 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-10 23:49:09 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-10 23:49:09 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:49:09 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:49:09 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-10 23:49:09 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:49:09 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-10 23:49:09 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:49:12 -0700
+Processing by CreaturesController#index as */*
+  [1m[35mCreature Load (0.4ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/creatures" for 127.0.0.1 at 2016-05-10 23:49:19 -0700
+Processing by CreaturesController#create as HTML
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: creature):
+  app/controllers/creatures_controller.rb:42:in `creature_params'
+  app/controllers/creatures_controller.rb:8:in `create'
+
+
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.4ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.0ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (35.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-10 23:51:20 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 115ms (Views: 114.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-10 23:51:20 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 25ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-fbe0d1f2bf9985b4d5953b97a7d9254b21d7a2cb87f6d55dffa5cd8e505c6fc6.js?body=1" for 127.0.0.1 at 2016-05-10 23:51:20 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:51:22 -0700
+Processing by CreaturesController#index as HTML
+  [1m[36mCreature Load (0.5ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:51:22 -0700
+Processing by CreaturesController#index as HTML
+  [1m[35mCreature Load (0.4ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:51:32 -0700
+Processing by CreaturesController#index as HTML
+  [1m[36mCreature Load (0.6ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:51:51 -0700
+Processing by CreaturesController#index as HTML
+  [1m[35mCreature Load (0.3ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-10 23:51:54 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 111ms (Views: 110.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-a3e63c1c974c8d7eecb383387ed551b1fbf83c36be069431f48ffaad41723c5c.js?body=1" for 127.0.0.1 at 2016-05-10 23:51:55 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:51:56 -0700
+Processing by CreaturesController#index as */*
+  [1m[36mCreature Load (0.4ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/creatures" for 127.0.0.1 at 2016-05-10 23:52:08 -0700
+Processing by CreaturesController#create as HTML
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: creature):
+  app/controllers/creatures_controller.rb:42:in `creature_params'
+  app/controllers/creatures_controller.rb:8:in `create'
+
+
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.5ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.5ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (35.3ms)
+
+
+Started POST "/creatures" for 127.0.0.1 at 2016-05-10 23:52:49 -0700
+Processing by CreaturesController#create as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-10 23:52:53 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-10 23:52:53 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 29ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:52:55 -0700
+Processing by CreaturesController#index as */*
+  [1m[35mCreature Load (0.6ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 20ms (Views: 9.2ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/creatures" for 127.0.0.1 at 2016-05-10 23:53:01 -0700
+Processing by CreaturesController#create as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/creatures" for 127.0.0.1 at 2016-05-10 23:54:41 -0700
+Processing by CreaturesController#create as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-10 23:54:44 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 113ms (Views: 112.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-10 23:54:44 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-4e81696eecacfe550546f3f7fa33a41821bc437f887ddfd68d019bbdb5b5c95d.js?body=1" for 127.0.0.1 at 2016-05-10 23:54:44 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:54:45 -0700
+Processing by CreaturesController#index as */*
+  [1m[36mCreature Load (0.5ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-10 23:55:17 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 108ms (Views: 107.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:55:17 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-10 23:55:17 -0700
+
+
+Started GET "/assets/creatures.self-5bfce733ecb9cd878599afc0396bbf298bfac9322a1b3dc5b05d17b334ea8c0d.css?body=1" for 127.0.0.1 at 2016-05-10 23:55:17 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:55:17 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2016-05-10 23:55:17 -0700
+
+
+Started GET "/assets/home.self-929b86dc50dd561d36f3c889e7b381de0093938ed88035810537ab52fe4af20a.js?body=1" for 127.0.0.1 at 2016-05-10 23:55:17 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-10 23:55:17 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-10 23:55:17 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-10 23:55:17 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:55:17 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:55:17 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:55:17 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-10 23:55:17 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-10 23:55:17 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:55:19 -0700
+Processing by CreaturesController#index as */*
+  [1m[35mCreature Load (0.4ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-10 23:56:36 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 105ms (Views: 104.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:56:36 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-10 23:56:36 -0700
+
+
+Started GET "/assets/creatures.self-5bfce733ecb9cd878599afc0396bbf298bfac9322a1b3dc5b05d17b334ea8c0d.css?body=1" for 127.0.0.1 at 2016-05-10 23:56:36 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:56:36 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2016-05-10 23:56:36 -0700
+
+
+Started GET "/assets/home.self-319ea3a939fd8e3887fce9ae08cc19c2d2b4ca23d4fae444cf7059ba7a4d40a4.js?body=1" for 127.0.0.1 at 2016-05-10 23:56:36 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-10 23:56:36 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-10 23:56:36 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-10 23:56:36 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:56:36 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:56:36 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:56:36 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-10 23:56:36 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-10 23:56:36 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:56:37 -0700
+Processing by CreaturesController#index as */*
+  [1m[36mCreature Load (0.4ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-10 23:57:47 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 87ms (Views: 86.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:57:47 -0700
+
+
+Started GET "/assets/creatures.self-5bfce733ecb9cd878599afc0396bbf298bfac9322a1b3dc5b05d17b334ea8c0d.css?body=1" for 127.0.0.1 at 2016-05-10 23:57:47 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:57:47 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-10 23:57:47 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2016-05-10 23:57:47 -0700
+
+
+Started GET "/assets/home.self-ba263e1f803153d241543091b6541e8e8500ac410fe2d119ef958bcdd2855f29.js?body=1" for 127.0.0.1 at 2016-05-10 23:57:47 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-10 23:57:47 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-10 23:57:47 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-10 23:57:47 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:57:47 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:57:47 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:57:48 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-10 23:57:48 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-10 23:57:48 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:57:49 -0700
+Processing by CreaturesController#index as */*
+  [1m[35mCreature Load (0.4ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-10 23:58:16 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 103ms (Views: 101.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:58:16 -0700
+
+
+Started GET "/assets/creatures.self-5bfce733ecb9cd878599afc0396bbf298bfac9322a1b3dc5b05d17b334ea8c0d.css?body=1" for 127.0.0.1 at 2016-05-10 23:58:16 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-10 23:58:16 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2016-05-10 23:58:16 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-10 23:58:16 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:58:16 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:58:16 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-10 23:58:16 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-10 23:58:16 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:58:16 -0700
+
+
+Started GET "/assets/home.self-866473ab45c6c6fdf96b00c429f4c967cf098f8b8833cc123b83b2f443d105d8.js?body=1" for 127.0.0.1 at 2016-05-10 23:58:16 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:58:16 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-10 23:58:16 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-10 23:58:16 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:58:18 -0700
+Processing by CreaturesController#index as */*
+  [1m[36mCreature Load (0.5ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-10 23:58:49 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 42ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:58:49 -0700
+
+
+Started GET "/assets/creatures.self-5bfce733ecb9cd878599afc0396bbf298bfac9322a1b3dc5b05d17b334ea8c0d.css?body=1" for 127.0.0.1 at 2016-05-10 23:58:49 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-10 23:58:49 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2016-05-10 23:58:49 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-10 23:58:49 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-10 23:58:49 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-10 23:58:49 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-10 23:58:49 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:58:49 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:58:49 -0700
+
+
+Started GET "/assets/home.self-319ea3a939fd8e3887fce9ae08cc19c2d2b4ca23d4fae444cf7059ba7a4d40a4.js?body=1" for 127.0.0.1 at 2016-05-10 23:58:49 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-10 23:58:49 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-10 23:58:49 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-10 23:58:49 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-10 23:58:51 -0700
+Processing by CreaturesController#index as */*
+  [1m[35mCreature Load (0.4ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-11 00:00:16 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 103ms (Views: 102.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/creatures.self-5bfce733ecb9cd878599afc0396bbf298bfac9322a1b3dc5b05d17b334ea8c0d.css?body=1" for 127.0.0.1 at 2016-05-11 00:00:16 -0700
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:00:16 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-11 00:00:16 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-11 00:00:16 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:00:16 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2016-05-11 00:00:16 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-11 00:00:16 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:00:16 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-11 00:00:16 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:00:16 -0700
+
+
+Started GET "/assets/home.self-5b0dae52502fd658ded00398075519da5d62d57775a8baae5d5d3c6fed8068ab.js?body=1" for 127.0.0.1 at 2016-05-11 00:00:16 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:00:16 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-11 00:00:16 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-11 00:00:16 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:00:18 -0700
+Processing by CreaturesController#index as */*
+  [1m[36mCreature Load (0.5ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-11 00:00:48 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 132ms (Views: 130.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:00:48 -0700
+
+
+Started GET "/assets/creatures.self-5bfce733ecb9cd878599afc0396bbf298bfac9322a1b3dc5b05d17b334ea8c0d.css?body=1" for 127.0.0.1 at 2016-05-11 00:00:48 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-11 00:00:48 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:00:48 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2016-05-11 00:00:48 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-11 00:00:48 -0700
+
+
+Started GET "/assets/home.self-c3f0a4d2cc1d722da703c6e85f2e258c24e708ef66eb02d65fe23a7fd2d933c3.js?body=1" for 127.0.0.1 at 2016-05-11 00:00:48 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-11 00:00:48 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-11 00:00:48 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:00:48 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:00:48 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:00:48 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-11 00:00:48 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-11 00:00:48 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:00:50 -0700
+Processing by CreaturesController#index as */*
+  [1m[35mCreature Load (0.6ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-11 00:01:29 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 121ms (Views: 119.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/creatures.self-5bfce733ecb9cd878599afc0396bbf298bfac9322a1b3dc5b05d17b334ea8c0d.css?body=1" for 127.0.0.1 at 2016-05-11 00:01:29 -0700
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:01:29 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-11 00:01:29 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:01:29 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2016-05-11 00:01:29 -0700
+
+
+Started GET "/assets/home.self-ec0499b83ea032b4da28a3c38798e5339298cc2cd4aadf057b15f19b1eabe7e1.js?body=1" for 127.0.0.1 at 2016-05-11 00:01:29 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-11 00:01:29 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-11 00:01:29 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:01:29 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-11 00:01:29 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:01:29 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:01:29 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-11 00:01:29 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-11 00:01:29 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:01:30 -0700
+Processing by CreaturesController#index as */*
+  [1m[36mCreature Load (0.3ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-11 00:02:11 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 123ms (Views: 122.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:02:11 -0700
+
+
+Started GET "/assets/creatures.self-5bfce733ecb9cd878599afc0396bbf298bfac9322a1b3dc5b05d17b334ea8c0d.css?body=1" for 127.0.0.1 at 2016-05-11 00:02:11 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-11 00:02:11 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:02:11 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:02:11 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-11 00:02:11 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-11 00:02:11 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2016-05-11 00:02:11 -0700
+
+
+Started GET "/assets/home.self-f60e6a1001b8e14dae4d772e87c72a1f368b2e33bdb0500e34d93584f9f41095.js?body=1" for 127.0.0.1 at 2016-05-11 00:02:11 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:02:11 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-11 00:02:11 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-11 00:02:11 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-11 00:02:11 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:02:11 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:02:13 -0700
+Processing by CreaturesController#index as */*
+  [1m[35mCreature Load (0.5ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-11 00:03:56 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 120ms (Views: 118.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/creatures.self-5bfce733ecb9cd878599afc0396bbf298bfac9322a1b3dc5b05d17b334ea8c0d.css?body=1" for 127.0.0.1 at 2016-05-11 00:03:56 -0700
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:03:56 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:03:56 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-11 00:03:56 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-11 00:03:56 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2016-05-11 00:03:56 -0700
+
+
+Started GET "/assets/home.self-2bed30db30196d1a2ede29ea22f8cb6d7c8289f01377936efabea9e049ad73dd.js?body=1" for 127.0.0.1 at 2016-05-11 00:03:56 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-11 00:03:56 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-11 00:03:56 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:03:56 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:03:56 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:03:56 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-11 00:03:56 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-11 00:03:56 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:03:58 -0700
+Processing by CreaturesController#index as */*
+  [1m[36mCreature Load (0.7ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-11 00:04:41 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 128ms (Views: 127.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/creatures.self-5bfce733ecb9cd878599afc0396bbf298bfac9322a1b3dc5b05d17b334ea8c0d.css?body=1" for 127.0.0.1 at 2016-05-11 00:04:41 -0700
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:04:41 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-11 00:04:41 -0700
+
+
+Started GET "/assets/home.self-d086a0f9b14c8b62ca2991703240e600ace696705ea2e639942883fc882fe77e.js?body=1" for 127.0.0.1 at 2016-05-11 00:04:41 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2016-05-11 00:04:41 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:04:41 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-11 00:04:41 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-11 00:04:41 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-11 00:04:41 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:04:41 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:04:41 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:04:41 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-11 00:04:41 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-11 00:04:41 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:04:43 -0700
+Processing by CreaturesController#index as */*
+  [1m[35mCreature Load (0.4ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/creatures" for 127.0.0.1 at 2016-05-11 00:04:49 -0700
+Processing by CreaturesController#create as */*
+  Parameters: {"creature"=>{"name"=>"Nemo", "description"=>"Adventurous clownfish"}}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:05:10 -0700
+Processing by CreaturesController#index as */*
+  [1m[36mCreature Load (0.5ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-11 00:05:47 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 108ms (Views: 107.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:05:48 -0700
+
+
+Started GET "/assets/creatures.self-5bfce733ecb9cd878599afc0396bbf298bfac9322a1b3dc5b05d17b334ea8c0d.css?body=1" for 127.0.0.1 at 2016-05-11 00:05:48 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:05:48 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-11 00:05:48 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-11 00:05:48 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2016-05-11 00:05:48 -0700
+
+
+Started GET "/assets/home.self-f62ca5bbcd6c137131c58feb77aff3fa3a47a9e2771aa1eac66781799799af97.js?body=1" for 127.0.0.1 at 2016-05-11 00:05:48 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-11 00:05:48 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-11 00:05:48 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:05:48 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:05:48 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:05:48 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-11 00:05:48 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-11 00:05:48 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:05:49 -0700
+Processing by CreaturesController#index as */*
+  [1m[35mCreature Load (0.4ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 20ms (Views: 9.2ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/creature" for 127.0.0.1 at 2016-05-11 00:05:53 -0700
+
+ActionController::RoutingError (No route matches [POST] "/creature"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/drewrudebusch/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/drewrudebusch/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/drewrudebusch/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (8.9ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:06:05 -0700
+Processing by CreaturesController#index as */*
+  [1m[36mCreature Load (0.4ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-11 00:06:27 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 133ms (Views: 131.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:06:27 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-11 00:06:27 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:06:27 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2016-05-11 00:06:27 -0700
+
+
+Started GET "/assets/creatures.self-5bfce733ecb9cd878599afc0396bbf298bfac9322a1b3dc5b05d17b334ea8c0d.css?body=1" for 127.0.0.1 at 2016-05-11 00:06:27 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-11 00:06:27 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-11 00:06:27 -0700
+
+
+Started GET "/assets/home.self-dc97545158dd64d43dacb69e487bdabd9142a587fd0d13c29c671cd439b5ec14.js?body=1" for 127.0.0.1 at 2016-05-11 00:06:27 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-11 00:06:27 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:06:27 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:06:27 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-11 00:06:27 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:06:27 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-11 00:06:27 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:06:28 -0700
+Processing by CreaturesController#index as */*
+  [1m[35mCreature Load (0.3ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/creatures" for 127.0.0.1 at 2016-05-11 00:06:33 -0700
+Processing by CreaturesController#create as */*
+  Parameters: {"creature"=>{"name"=>"Nemo", "description"=>"Adventurous clownfish"}}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "creatures" ("description", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["description", "Adventurous clownfish"], ["name", "Nemo"], ["created_at", "2016-05-11 07:06:33.339191"], ["updated_at", "2016-05-11 07:06:33.339191"]]
+  [1m[36m (36.2ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 49ms (Views: 0.7ms | ActiveRecord: 37.4ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:06:37 -0700
+Processing by CreaturesController#index as */*
+  [1m[35mCreature Load (0.7ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 10ms (Views: 6.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-11 00:07:47 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 99ms (Views: 98.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:07:47 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-11 00:07:47 -0700
+
+
+Started GET "/assets/creatures.self-5bfce733ecb9cd878599afc0396bbf298bfac9322a1b3dc5b05d17b334ea8c0d.css?body=1" for 127.0.0.1 at 2016-05-11 00:07:47 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:07:47 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2016-05-11 00:07:47 -0700
+
+
+Started GET "/assets/home.self-4b65ab6294d3feb1058df576bc483f44ef510eba1cee3217938ad15f30858e5a.js?body=1" for 127.0.0.1 at 2016-05-11 00:07:47 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-11 00:07:47 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-11 00:07:47 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-11 00:07:47 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:07:47 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:07:47 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:07:47 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-11 00:07:47 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-11 00:07:47 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-11 00:08:27 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 130ms (Views: 128.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:08:27 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-11 00:08:27 -0700
+
+
+Started GET "/assets/home.self-c68b1be3599f90dfed9fe87406f24982bc4b0d3bd5aafd05598d038182322a83.js?body=1" for 127.0.0.1 at 2016-05-11 00:08:27 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2016-05-11 00:08:27 -0700
+
+
+Started GET "/assets/creatures.self-5bfce733ecb9cd878599afc0396bbf298bfac9322a1b3dc5b05d17b334ea8c0d.css?body=1" for 127.0.0.1 at 2016-05-11 00:08:27 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:08:27 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-11 00:08:27 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-11 00:08:27 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-11 00:08:27 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:08:27 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:08:28 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:08:28 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-11 00:08:28 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-11 00:08:28 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:08:29 -0700
+Processing by CreaturesController#index as */*
+  [1m[36mCreature Load (0.7ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:08:36 -0700
+Processing by CreaturesController#index as */*
+  [1m[35mCreature Load (0.5ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/creatures/14" for 127.0.0.1 at 2016-05-11 00:08:38 -0700
+Processing by CreaturesController#destroy as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mCreature Load (0.5ms)[0m  [1mSELECT  "creatures".* FROM "creatures" WHERE "creatures"."id" = $1 LIMIT 1[0m  [["id", 14]]
+  [1m[35mSQL (25.9ms)[0m  DELETE FROM "creatures" WHERE "creatures"."id" = $1  [["id", 14]]
+Completed 200 OK in 45ms (Views: 0.7ms | ActiveRecord: 26.4ms)
+
+
+Started POST "/creatures" for 127.0.0.1 at 2016-05-11 00:08:45 -0700
+Processing by CreaturesController#create as */*
+  Parameters: {"creature"=>{"name"=>"Nemo", "description"=>"Adventurous clownfish"}}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "creatures" ("description", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["description", "Adventurous clownfish"], ["name", "Nemo"], ["created_at", "2016-05-11 07:08:45.884314"], ["updated_at", "2016-05-11 07:08:45.884314"]]
+  [1m[36m (32.8ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 40ms (Views: 0.8ms | ActiveRecord: 33.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-11 00:11:06 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 128ms (Views: 126.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-37d24579f728e3a9ca9bb4f63522ede5d8931e2a219430a6ab839a703a36df17.js?body=1" for 127.0.0.1 at 2016-05-11 00:11:06 -0700
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:11:06 -0700
+
+
+Started GET "/assets/creatures.self-5bfce733ecb9cd878599afc0396bbf298bfac9322a1b3dc5b05d17b334ea8c0d.css?body=1" for 127.0.0.1 at 2016-05-11 00:11:06 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-11 00:11:06 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2016-05-11 00:11:06 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:11:06 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-11 00:11:06 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-11 00:11:07 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:11:07 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-11 00:11:07 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:11:07 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:11:07 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-11 00:11:07 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-11 00:11:07 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:11:08 -0700
+Processing by CreaturesController#index as */*
+  [1m[35mCreature Load (0.5ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-11 00:11:34 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 92ms (Views: 91.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:11:34 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-11 00:11:34 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2016-05-11 00:11:34 -0700
+
+
+Started GET "/assets/creatures.self-5bfce733ecb9cd878599afc0396bbf298bfac9322a1b3dc5b05d17b334ea8c0d.css?body=1" for 127.0.0.1 at 2016-05-11 00:11:34 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-11 00:11:34 -0700
+
+
+Started GET "/assets/home.self-a228c901901820037e2f81cded11c5964fa659c261e5e2943846efa080a54fb4.js?body=1" for 127.0.0.1 at 2016-05-11 00:11:34 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:11:34 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-11 00:11:35 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-11 00:11:35 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:11:35 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:11:35 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:11:35 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-11 00:11:35 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-11 00:11:35 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:11:36 -0700
+Processing by CreaturesController#index as */*
+  [1m[36mCreature Load (0.4ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/creatures/15" for 127.0.0.1 at 2016-05-11 00:12:32 -0700
+Processing by CreaturesController#destroy as */*
+  Parameters: {"id"=>"15"}
+  [1m[35mCreature Load (0.7ms)[0m  SELECT  "creatures".* FROM "creatures" WHERE "creatures"."id" = $1 LIMIT 1  [["id", 15]]
+  [1m[36mSQL (24.6ms)[0m  [1mDELETE FROM "creatures" WHERE "creatures"."id" = $1[0m  [["id", 15]]
+Completed 200 OK in 29ms (Views: 0.7ms | ActiveRecord: 25.3ms)
+
+
+Started POST "/creatures" for 127.0.0.1 at 2016-05-11 00:12:38 -0700
+Processing by CreaturesController#create as */*
+  Parameters: {"creature"=>{"name"=>"Nemo", "description"=>"Adventurous clownfish"}}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "creatures" ("description", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Adventurous clownfish"], ["name", "Nemo"], ["created_at", "2016-05-11 07:12:38.354942"], ["updated_at", "2016-05-11 07:12:38.354942"]]
+  [1m[35m (36.3ms)[0m  COMMIT
+Completed 200 OK in 44ms (Views: 0.6ms | ActiveRecord: 37.0ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:13:57 -0700
+Processing by CreaturesController#index as */*
+  [1m[36mCreature Load (0.3ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 14ms (Views: 1.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:14:01 -0700
+Processing by CreaturesController#index as */*
+  [1m[35mCreature Load (0.5ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 6ms (Views: 2.9ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/creatures/16" for 127.0.0.1 at 2016-05-11 00:14:03 -0700
+Processing by CreaturesController#destroy as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mCreature Load (0.6ms)[0m  [1mSELECT  "creatures".* FROM "creatures" WHERE "creatures"."id" = $1 LIMIT 1[0m  [["id", 16]]
+  [1m[35mSQL (26.3ms)[0m  DELETE FROM "creatures" WHERE "creatures"."id" = $1  [["id", 16]]
+Completed 200 OK in 33ms (Views: 1.1ms | ActiveRecord: 26.9ms)
+
+
+Started POST "/creatures" for 127.0.0.1 at 2016-05-11 00:14:18 -0700
+Processing by CreaturesController#create as */*
+  Parameters: {"creature"=>{"name"=>"Nemo", "description"=>"Adventurous clownfish"}}
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "creatures" ("description", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["description", "Adventurous clownfish"], ["name", "Nemo"], ["created_at", "2016-05-11 07:14:18.260915"], ["updated_at", "2016-05-11 07:14:18.260915"]]
+  [1m[36m (25.3ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 35ms (Views: 0.5ms | ActiveRecord: 26.4ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:17:01 -0700
+Processing by CreaturesController#index as */*
+  [1m[35mCreature Load (0.4ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 17ms (Views: 7.5ms | ActiveRecord: 3.0ms)
+
+
+Started DELETE "/creatures/17" for 127.0.0.1 at 2016-05-11 00:17:03 -0700
+Processing by CreaturesController#destroy as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mCreature Load (0.6ms)[0m  [1mSELECT  "creatures".* FROM "creatures" WHERE "creatures"."id" = $1 LIMIT 1[0m  [["id", 17]]
+  [1m[35mSQL (37.1ms)[0m  DELETE FROM "creatures" WHERE "creatures"."id" = $1  [["id", 17]]
+Completed 200 OK in 43ms (Views: 0.7ms | ActiveRecord: 37.7ms)
+
+
+Started POST "/creatures" for 127.0.0.1 at 2016-05-11 00:17:11 -0700
+Processing by CreaturesController#create as */*
+  Parameters: {"creature"=>{"name"=>"Nemo", "description"=>"Adventurous clownfish"}}
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "creatures" ("description", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["description", "Adventurous clownfish"], ["name", "Nemo"], ["created_at", "2016-05-11 07:17:11.928833"], ["updated_at", "2016-05-11 07:17:11.928833"]]
+  [1m[36m (26.2ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 35ms (Views: 0.5ms | ActiveRecord: 27.2ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:18:09 -0700
+Processing by CreaturesController#index as */*
+  [1m[35mCreature Load (0.5ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/creatures/18" for 127.0.0.1 at 2016-05-11 00:18:11 -0700
+Processing by CreaturesController#destroy as */*
+  Parameters: {"id"=>"18"}
+  [1m[36mCreature Load (0.6ms)[0m  [1mSELECT  "creatures".* FROM "creatures" WHERE "creatures"."id" = $1 LIMIT 1[0m  [["id", 18]]
+  [1m[35mSQL (17.5ms)[0m  DELETE FROM "creatures" WHERE "creatures"."id" = $1  [["id", 18]]
+Completed 200 OK in 22ms (Views: 0.9ms | ActiveRecord: 18.1ms)
+
+
+Started POST "/creatures" for 127.0.0.1 at 2016-05-11 00:18:16 -0700
+Processing by CreaturesController#create as */*
+  Parameters: {"creature"=>{"name"=>"Nemo", "description"=>"Adventurous clownfish"}}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "creatures" ("description", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["description", "Adventurous clownfish"], ["name", "Nemo"], ["created_at", "2016-05-11 07:18:16.760970"], ["updated_at", "2016-05-11 07:18:16.760970"]]
+  [1m[36m (25.7ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 33ms (Views: 0.5ms | ActiveRecord: 26.5ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:19:45 -0700
+Processing by CreaturesController#index as */*
+  [1m[35mCreature Load (0.5ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/creatures/19" for 127.0.0.1 at 2016-05-11 00:19:47 -0700
+Processing by CreaturesController#destroy as */*
+  Parameters: {"id"=>"19"}
+  [1m[36mCreature Load (0.7ms)[0m  [1mSELECT  "creatures".* FROM "creatures" WHERE "creatures"."id" = $1 LIMIT 1[0m  [["id", 19]]
+  [1m[35mSQL (28.6ms)[0m  DELETE FROM "creatures" WHERE "creatures"."id" = $1  [["id", 19]]
+Completed 200 OK in 34ms (Views: 1.2ms | ActiveRecord: 29.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-11 00:20:50 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 96ms (Views: 94.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:20:50 -0700
+
+
+Started GET "/assets/creatures.self-5bfce733ecb9cd878599afc0396bbf298bfac9322a1b3dc5b05d17b334ea8c0d.css?body=1" for 127.0.0.1 at 2016-05-11 00:20:50 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:20:50 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-11 00:20:50 -0700
+
+
+Started GET "/assets/home.self-a00884080103a1ee6e93524238e5b56d01caf69ddda31ebe7b248dc98b895aa9.js?body=1" for 127.0.0.1 at 2016-05-11 00:20:50 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2016-05-11 00:20:50 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-11 00:20:50 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-11 00:20:50 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:20:50 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-11 00:20:50 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:20:50 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:20:50 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-11 00:20:50 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-11 00:20:50 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:20:53 -0700
+Processing by CreaturesController#index as */*
+  [1m[36mCreature Load (0.5ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 13ms (Views: 5.5ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/creatures" for 127.0.0.1 at 2016-05-11 00:21:00 -0700
+Processing by CreaturesController#create as */*
+  Parameters: {"creature"=>{"name"=>"Nemo", "description"=>"Adventurous clownfish"}}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "creatures" ("description", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Adventurous clownfish"], ["name", "Nemo"], ["created_at", "2016-05-11 07:21:00.596980"], ["updated_at", "2016-05-11 07:21:00.596980"]]
+  [1m[35m (42.8ms)[0m  COMMIT
+Completed 200 OK in 49ms (Views: 0.5ms | ActiveRecord: 43.4ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:21:00 -0700
+Processing by CreaturesController#index as */*
+  [1m[36mCreature Load (0.3ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-11 00:25:36 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 110ms (Views: 109.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:25:36 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-11 00:25:36 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:25:36 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2016-05-11 00:25:36 -0700
+
+
+Started GET "/assets/creatures.self-5bfce733ecb9cd878599afc0396bbf298bfac9322a1b3dc5b05d17b334ea8c0d.css?body=1" for 127.0.0.1 at 2016-05-11 00:25:36 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-11 00:25:36 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-11 00:25:36 -0700
+
+
+Started GET "/assets/home.self-9301033b2c09738894294eb87afcde34cbb52961da8e3e1530dd56a24406273f.js?body=1" for 127.0.0.1 at 2016-05-11 00:25:36 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-11 00:25:36 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:25:36 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:25:36 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:25:36 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-11 00:25:36 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-11 00:25:36 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:25:41 -0700
+Processing by CreaturesController#index as */*
+  [1m[35mCreature Load (0.4ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 18ms (Views: 8.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-11 00:25:58 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 106ms (Views: 105.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:25:58 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-11 00:25:58 -0700
+
+
+Started GET "/assets/creatures.self-5bfce733ecb9cd878599afc0396bbf298bfac9322a1b3dc5b05d17b334ea8c0d.css?body=1" for 127.0.0.1 at 2016-05-11 00:25:58 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2016-05-11 00:25:58 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:25:58 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-11 00:25:58 -0700
+
+
+Started GET "/assets/home.self-acfa6bb9d936cb0c0a79090f045c63498db2649c3953fe163a83fcc7aca76933.js?body=1" for 127.0.0.1 at 2016-05-11 00:25:58 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-11 00:25:58 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:25:58 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:25:58 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-11 00:25:58 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:25:58 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-11 00:25:58 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-11 00:25:58 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:26:00 -0700
+Processing by CreaturesController#index as */*
+  [1m[36mCreature Load (0.5ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-11 00:26:27 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 43ms (Views: 42.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:26:27 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-11 00:26:27 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-11 00:26:27 -0700
+
+
+Started GET "/assets/creatures.self-5bfce733ecb9cd878599afc0396bbf298bfac9322a1b3dc5b05d17b334ea8c0d.css?body=1" for 127.0.0.1 at 2016-05-11 00:26:27 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2016-05-11 00:26:27 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:26:27 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-11 00:26:27 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-11 00:26:27 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:26:27 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:26:27 -0700
+
+
+Started GET "/assets/home.self-acfa6bb9d936cb0c0a79090f045c63498db2649c3953fe163a83fcc7aca76933.js?body=1" for 127.0.0.1 at 2016-05-11 00:26:27 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:26:27 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-11 00:26:27 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-11 00:26:27 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:26:29 -0700
+Processing by CreaturesController#index as */*
+  [1m[35mCreature Load (0.4ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:26:33 -0700
+Processing by CreaturesController#index as */*
+  [1m[36mCreature Load (0.6ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/creatures/new" for 127.0.0.1 at 2016-05-11 00:26:34 -0700
+
+ActionController::RoutingError (No route matches [GET] "/creatures/new"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/drewrudebusch/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/drewrudebusch/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/drewrudebusch/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (25.5ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.0ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (39.2ms)
+
+
+Started GET "/creatures/new" for 127.0.0.1 at 2016-05-11 00:26:34 -0700
+
+ActionController::RoutingError (No route matches [GET] "/creatures/new"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/drewrudebusch/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/drewrudebusch/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/drewrudebusch/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.7ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.3ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/drewrudebusch/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (37.8ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:26:50 -0700
+Processing by CreaturesController#index as */*
+  [1m[35mCreature Load (0.4ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-11 00:27:57 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 93ms (Views: 92.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:27:57 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2016-05-11 00:27:57 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-11 00:27:57 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:27:57 -0700
+
+
+Started GET "/assets/creatures.self-5bfce733ecb9cd878599afc0396bbf298bfac9322a1b3dc5b05d17b334ea8c0d.css?body=1" for 127.0.0.1 at 2016-05-11 00:27:57 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-11 00:27:57 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-11 00:27:57 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-11 00:27:57 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:27:57 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:27:57 -0700
+
+
+Started GET "/assets/home.self-2e5b247313b14a05fcd25cf4a2d6502493125a55226fb8c9704a4e36df0a0feb.js?body=1" for 127.0.0.1 at 2016-05-11 00:27:57 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:27:57 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-11 00:27:57 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-11 00:27:57 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:27:59 -0700
+Processing by CreaturesController#index as */*
+  [1m[36mCreature Load (0.4ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:28:05 -0700
+Processing by CreaturesController#index as */*
+  [1m[35mCreature Load (0.4ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-11 00:28:19 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 42ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:28:19 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-11 00:28:19 -0700
+
+
+Started GET "/assets/creatures.self-5bfce733ecb9cd878599afc0396bbf298bfac9322a1b3dc5b05d17b334ea8c0d.css?body=1" for 127.0.0.1 at 2016-05-11 00:28:19 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-11 00:28:19 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:28:19 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2016-05-11 00:28:19 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-11 00:28:19 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-11 00:28:19 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:28:19 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:28:19 -0700
+
+
+Started GET "/assets/home.self-2e5b247313b14a05fcd25cf4a2d6502493125a55226fb8c9704a4e36df0a0feb.js?body=1" for 127.0.0.1 at 2016-05-11 00:28:19 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:28:19 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-11 00:28:19 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-11 00:28:19 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:28:22 -0700
+Processing by CreaturesController#index as */*
+  [1m[36mCreature Load (0.7ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:28:26 -0700
+Processing by CreaturesController#index as */*
+  [1m[35mCreature Load (0.8ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-11 00:28:49 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 38ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:28:49 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-11 00:28:49 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:28:49 -0700
+
+
+Started GET "/assets/creatures.self-5bfce733ecb9cd878599afc0396bbf298bfac9322a1b3dc5b05d17b334ea8c0d.css?body=1" for 127.0.0.1 at 2016-05-11 00:28:49 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2016-05-11 00:28:49 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-11 00:28:49 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-11 00:28:49 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:28:49 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:28:49 -0700
+
+
+Started GET "/assets/home.self-2e5b247313b14a05fcd25cf4a2d6502493125a55226fb8c9704a4e36df0a0feb.js?body=1" for 127.0.0.1 at 2016-05-11 00:28:49 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:28:49 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-11 00:28:49 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-11 00:28:49 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-11 00:28:49 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:28:52 -0700
+Processing by CreaturesController#index as */*
+  [1m[36mCreature Load (0.4ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-11 00:29:05 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:29:05 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2016-05-11 00:29:05 -0700
+
+
+Started GET "/assets/creatures.self-5bfce733ecb9cd878599afc0396bbf298bfac9322a1b3dc5b05d17b334ea8c0d.css?body=1" for 127.0.0.1 at 2016-05-11 00:29:05 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-11 00:29:05 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:29:05 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-11 00:29:05 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-11 00:29:05 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-11 00:29:05 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:29:05 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:29:05 -0700
+
+
+Started GET "/assets/home.self-2e5b247313b14a05fcd25cf4a2d6502493125a55226fb8c9704a4e36df0a0feb.js?body=1" for 127.0.0.1 at 2016-05-11 00:29:05 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:29:05 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-11 00:29:05 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-11 00:29:05 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:29:09 -0700
+Processing by CreaturesController#index as */*
+  [1m[35mCreature Load (0.8ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-11 00:29:17 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 38ms (Views: 37.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:29:17 -0700
+
+
+Started GET "/assets/creatures.self-5bfce733ecb9cd878599afc0396bbf298bfac9322a1b3dc5b05d17b334ea8c0d.css?body=1" for 127.0.0.1 at 2016-05-11 00:29:17 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-11 00:29:17 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-11 00:29:17 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:29:17 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2016-05-11 00:29:17 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-11 00:29:17 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-11 00:29:17 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:29:17 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:29:17 -0700
+
+
+Started GET "/assets/home.self-2e5b247313b14a05fcd25cf4a2d6502493125a55226fb8c9704a4e36df0a0feb.js?body=1" for 127.0.0.1 at 2016-05-11 00:29:17 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:29:17 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-11 00:29:17 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-11 00:29:17 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:29:19 -0700
+Processing by CreaturesController#index as */*
+  [1m[36mCreature Load (0.9ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:29:24 -0700
+Processing by CreaturesController#index as */*
+  [1m[35mCreature Load (0.8ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:29:28 -0700
+Processing by CreaturesController#index as */*
+  [1m[36mCreature Load (0.5ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-11 00:36:22 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 138ms (Views: 137.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-ecd20f3dad01423c6c8ed35a7d2977f7bbe118a58c92fb22a72d4b36520c51f0.js?body=1" for 127.0.0.1 at 2016-05-11 00:36:22 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:36:24 -0700
+Processing by CreaturesController#index as */*
+  [1m[35mCreature Load (1.0ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-11 00:37:07 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 125ms (Views: 124.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:37:07 -0700
+
+
+Started GET "/assets/creatures.self-5bfce733ecb9cd878599afc0396bbf298bfac9322a1b3dc5b05d17b334ea8c0d.css?body=1" for 127.0.0.1 at 2016-05-11 00:37:08 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-11 00:37:08 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-11 00:37:08 -0700
+
+
+Started GET "/assets/home.self-0e62b15514cd6fc73bae3bd3accb6776e79a0d98d2af7ee4acad555eb249adee.js?body=1" for 127.0.0.1 at 2016-05-11 00:37:08 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2016-05-11 00:37:08 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:37:08 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-11 00:37:08 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-11 00:37:08 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:37:08 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:37:08 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-11 00:37:08 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:37:08 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-11 00:37:08 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:37:11 -0700
+Processing by CreaturesController#index as */*
+  [1m[36mCreature Load (0.6ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-11 00:40:31 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 113ms (Views: 111.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-dcbc969858115f3e8812e6e724de0f2db5bc2632622cb5814f8175c5f1447036.js?body=1" for 127.0.0.1 at 2016-05-11 00:40:32 -0700
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:40:32 -0700
+
+
+Started GET "/assets/home.self-5ebc0281e8a180812ff5bd3104ec2c8f32c6c1f374ec383807b6b0c8c7e2a43d.css?body=1" for 127.0.0.1 at 2016-05-11 00:40:32 -0700
+
+
+Started GET "/assets/creatures.self-5bfce733ecb9cd878599afc0396bbf298bfac9322a1b3dc5b05d17b334ea8c0d.css?body=1" for 127.0.0.1 at 2016-05-11 00:40:32 -0700
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 00:40:32 -0700
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2016-05-11 00:40:32 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-11 00:40:32 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-11 00:40:32 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-11 00:40:32 -0700
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:40:32 -0700
+
+
+Started GET "/assets/creatures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:40:32 -0700
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 00:40:32 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-11 00:40:32 -0700
+
+
+Started GET "/assets/creatures-3c0b0b2aebee641649c842c14cca13271a0f061da19dde7390bc2081ead71866.jpg" for 127.0.0.1 at 2016-05-11 00:40:32 -0700
+
+
+Started GET "/creatures" for 127.0.0.1 at 2016-05-11 00:40:34 -0700
+Processing by CreaturesController#index as */*
+  [1m[35mCreature Load (0.7ms)[0m  SELECT "creatures".* FROM "creatures"
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.7ms)
